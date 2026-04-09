@@ -65,9 +65,9 @@
 
           NavMouse {
             bindings = <
-&trans  &kp LC(N)     &kp LC(PERIOD)  &kp LC(RBKT)  &kp LC(LS(RBKT))  &kp LC(Y)  &none  &none &kp C_VOL_UP  &kp PG_UP   &kp UP      &kp PG_DN   &none      &none
-&trans  &kp LC(A)     &kp LC(LBKT)    &kp LC(M)     &kp LC(FSLH)      &kp LC(L)  &none  &none &kp C_MUTE    &kp LEFT    &kp DOWN    &kp RIGHT   &none      &none
-&trans  &kp LC(SEMI)  &kp LC(E)       &kp LC(K)     &kp LC(J)         &kp LC(H)  &none  &none &kp C_VOL_DN  &kp HOME    &kp INS     &kp END     &kp PSCRN  &none
+&trans  &trans        &trans          &trans        &trans            &trans     &none  &none &kp C_VOL_UP  &kp PG_UP   &kp UP      &kp PG_DN   &none      &none
+&trans  &trans        &trans          &trans        &trans            &trans     &none  &none &kp C_MUTE    &kp LEFT    &kp DOWN    &kp RIGHT   &none      &none
+&trans  &trans        &kp LC(C)       &kp LC(H)     &kp LC(U)         &trans                  &kp C_VOL_DN  &kp HOME    &kp INS     &kp END     &kp PSCRN  &none
                                       &trans        &trans            &trans                  &trans        &trans      &trans
 >;
          };
