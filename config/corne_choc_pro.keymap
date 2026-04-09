@@ -14,8 +14,8 @@
     cmd {
       key-positions = <37 38>;
       bindings = <&kp LGUI>;
-  }
-};
+    };
+  };
 
   behaviors {
     mon_hml: home_row_mod_left {
@@ -39,9 +39,9 @@
       hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
       hold-trigger-on-release;
     };
-      };
+  };
 
-    keymap {
+  keymap {
         compatible = "zmk,keymap";
 
         Base {
@@ -50,7 +50,7 @@
 &kp TAB    &kp Q                &kp W                &kp E                  &kp R             &kp T      &none  &none  &kp Y      &kp U                     &kp I              &kp O            &kp P               &kp LBKT
 &kp LCTRL  &mon_hml LEFT_GUI A  &mon_hml LEFT_ALT S  &mon_hml LEFT_SHIFT D  &mon_hml LCTRL F  &kp G      &none  &none  &kp H      &mon_hmr RIGHT_CONTROL J  &mt RIGHT_SHIFT K  &mt LEFT_ALT L   &mt RIGHT_GUI SEMI  &kp APOS
 &kp RBKT   &kp Z                &kp X                &kp C                  &kp V             &kp B                    &kp N      &kp M                     &kp COMMA          &kp PERIOD       &kp FSLH            &kp BSLH
-                                                     &LEFT_GUI              &mo NUM_SYM       &kp RET                  &kp SPACE  &kp BACKSPACE             &mo NAV
+                                                     &kp LEFT_GUI           &mo NUM_SYM       &kp RET                  &kp SPACE  &kp BACKSPACE             &mo NAV
             >;
         };
 
