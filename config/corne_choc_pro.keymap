@@ -70,11 +70,11 @@
 
         NavMouse {
             bindings = <
-&trans  &trans  &trans     &trans     &trans     &trans  &none  &none  &kp C_VOL_UP  &kp PG_UP  &kp UP    &kp PG_DN  &none      &none
-&trans  &trans  &trans     &trans     &trans     &trans  &none  &none  &kp C_MUTE    &kp LEFT   &kp DOWN  &kp RIGHT  &none      &none
-&trans  &trans  &kp LC(C)  &kp LC(H)  &kp LC(U)  &trans                &kp C_VOL_DN  &kp HOME   &kp INS   &kp END    &kp PSCRN  &none
-                           &trans     &trans     &trans                &trans        &trans     &trans
-            >;
-        };
+&trans  &trans  &trans     &trans     &trans     &trans  &none  &none  &kp C_VOL_UP  &kp HOME    &kp UP      &kp END     &none      &none
+&trans  &trans        &trans          &trans        &trans            &trans     &none  &none &kp C_MUTE    &kp LEFT    &kp DOWN    &kp RIGHT   &none      &none
+&trans  &trans        &kp LC(C)       &kp LC(H)     &kp LC(U)         &trans                  &kp C_VOL_DN  &kp PG_UP   &kp INS     &kp PG_DN   &kp PSCRN  &none
+                                      &trans        &trans            &trans                  &trans        &trans      &trans
+>;
+         };
     };
 };
