@@ -11,6 +11,7 @@
 
 / {
   combos {
+    compatible = "zmk,combos";
     cmd {
       key-positions = <37 38>;
       bindings = <&kp LGUI>;
