@@ -50,6 +50,15 @@
         };
     };
 
+    macros {
+        double_shift: double_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT &kp LEFT_SHIFT>;
+            label = "DOUBLE_SHIFT";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -76,10 +85,10 @@
         Nav {
             display-name = "NAV";
             bindings = <
-&trans  &trans  &trans     &trans     &trans     &trans  &none  &none  &kp C_VOL_UP  &kp HOME   &kp UP    &kp END    &none       &none
-&trans  &trans  &trans     &trans     &trans     &trans  &none  &none  &kp C_MUTE    &kp LEFT   &kp DOWN  &kp RIGHT  &caps_word  &none
-&trans  &trans  &kp LC(C)  &kp LC(H)  &kp LC(U)  &trans                &kp C_VOL_DN  &kp PG_UP  &kp INS   &kp PG_DN  &kp PSCRN   &none
-                           &trans     &trans     &trans                &trans        &trans     &trans
+&trans  &trans  &trans     &double_shift  &kp C_PLAY_PAUSE  &trans  &none  &none  &kp C_VOL_UP  &kp HOME   &kp UP    &kp END    &none       &none
+&trans  &trans  &trans     &trans         &trans            &trans  &none  &none  &kp C_MUTE    &kp LEFT   &kp DOWN  &kp RIGHT  &caps_word  &none
+&trans  &trans  &kp LC(C)  &kp LC(H)      &kp LC(U)         &trans                &kp C_VOL_DN  &kp PG_UP  &kp INS   &kp PG_DN  &kp PSCRN   &none
+                           &trans         &trans            &trans                &trans        &trans     &trans
             >;
         };
 
