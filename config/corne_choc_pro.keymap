@@ -9,6 +9,8 @@
 #define NAV       2
 #define FN        3
 
+&caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE PERIOD COMMA FSLH APOS SEMI RBKT LBKT>; };
+
 / {
     chosen { zmk,physical-layout = &default_layout; };
 };
