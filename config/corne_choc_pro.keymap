@@ -11,6 +11,10 @@
 
 &caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE PERIOD COMMA FSLH APOS SEMI RBKT LBKT>; };
 
+&lt {
+    tapping-term-ms = <100>;
+};
+
 / {
     chosen { zmk,physical-layout = &default_layout; };
 };
@@ -31,8 +35,8 @@
             #binding-cells = <2>;
             flavor = "balanced";
             require-prior-idle-ms = <150>;
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
+            tapping-term-ms = <70>;
+            quick-tap-ms = <90>;
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_R THUMBS>;
@@ -44,7 +48,8 @@
             #binding-cells = <2>;
             flavor = "balanced";
             require-prior-idle-ms = <150>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <70>;
+            quick-tap-ms = <90>;
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_L THUMBS>;
