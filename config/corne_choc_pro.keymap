@@ -11,10 +11,6 @@
 
 &caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE PERIOD COMMA FSLH APOS SEMI RBKT LBKT>; };
 
-&lt {
-    tapping-term-ms = <100>;
-};
-
 / {
     chosen { zmk,physical-layout = &default_layout; };
 };
